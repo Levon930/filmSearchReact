@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  background-color: #1e1e1e;
+  padding: 10px;
+}
+.Link {
+  color: white;
+  text-decoration: none;
+  font-weight: 800;
+  opacity: 0.9;
+  font-size: 20px;
+  margin-left: 5%;
+}

@@ -1,0 +1,19 @@
+.jumbotron {
+  margin-top: 10px;
+  background-color: #444444;
+  padding: 30px;
+}
+#searchText {
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  border-radius: 30px;
+  border-color: transparent;
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.text-center {
+  color: #dbdbdb;
+  font-weight: 900;
+}
