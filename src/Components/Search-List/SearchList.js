@@ -1,4 +1,5 @@
 import React from "react";
+import "./SearchList.css";
 import fetchService from "../Services/FetchService";
 import Loading from "../Loader/Loader";
 import noMovie from "./noMovie.png";
@@ -44,7 +45,8 @@ class SearchList extends React.Component {
           className="film"
           key={film.id}
           onClick={() => {
-            this.props.history.push(`${film.id}`);
+            this.props.history.push(`/film/${film.id}`);
+            sessionStorage.setItem("data_type", film.media_type);
           }}
         >
           <img
@@ -61,6 +63,9 @@ class SearchList extends React.Component {
           <Loading />
         </div>
       );
+    }
+    if (searchRes.length === 0) {
+      return <div className="notFilm">Such a movie is not in the database</div>;
     }
     return (
       <div className="tops">

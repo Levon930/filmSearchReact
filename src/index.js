@@ -7,6 +7,7 @@ import Search from "./Components/Search/Search";
 import TopFilms from "./Components/Top-Films/TopFilms";
 import SearchList from "./Components/Search-List/SearchList";
 import ShowFilm from "./Components/Search-film/SearchFilm";
+import NotFound from "./Components/Not-Found/Not-Found";
 
 ReactDOM.render(
   <>
@@ -17,8 +18,9 @@ ReactDOM.render(
         <Switch>
           <Route path="/" component={TopFilms} exact />
           <Route path="/:value" component={SearchList} exact />
-          <Route path="/:value/:id" component={ShowFilm} />
-          {/* <Route component={NotFound} /> */}
+          <Route path="/film/:id" component={ShowFilm} />
+
+          {<Route component={NotFound} />}
         </Switch>
       </div>
     </BrowserRouter>

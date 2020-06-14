@@ -34,7 +34,15 @@ class TopFilms extends React.Component {
 
     const TopFilms = top.map((film) => {
       return (
-        <div className="film" key={film.id}>
+        <div
+          className="film"
+          key={film.id}
+          data-type={film.media_type}
+          onClick={() => {
+            this.props.history.push(`/film/${film.id}`);
+            sessionStorage.setItem("data_type", film.media_type);
+          }}
+        >
           <img src={url + film.poster_path} />
           <p>{film.name || film.title}</p>
         </div>

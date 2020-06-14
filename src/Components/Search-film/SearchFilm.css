@@ -1,0 +1,56 @@
+.about {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background-color: rgb(83, 83, 92);
+  color: white;
+}
+.about img {
+  width: 400px;
+  margin: 10px 10px 10px 10px;
+  height: 80%;
+}
+.info {
+  margin-left: 50px;
+}
+.info .name {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.info span {
+  color: rgb(255, 255, 255);
+}
+.season {
+  color: rgb(255, 255, 255);
+}
+
+.trailer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: rgb(83, 83, 92);
+}
+iframe {
+  padding-top: 10px;
+  margin: 0 auto;
+  width: 500px;
+  padding-bottom: 10px;
+}
+@media (max-width: 700px) {
+  .about {
+    flex-wrap: wrap;
+  }
+  .about img {
+    width: 80%;
+    margin: 10px auto;
+  }
+  iframe {
+    width: 80%;
+    margin: 10px auto;
+  }
+}

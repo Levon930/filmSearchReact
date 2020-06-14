@@ -1,0 +1,33 @@
+.tops {
+  margin-top: 10px;
+}
+.allTopFilm {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-around;
+  background-color: #444444;
+  padding-top: 10px;
+}
+.film img {
+  width: 100%;
+}
+.film {
+  max-width: 200px;
+  padding: 5px;
+}
+.film p {
+  text-align: center;
+  color: white;
+  font-weight: 800;
+}
+.notFilm {
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  font-weight: 900;
+  background-color: #444444;
+  margin-top: 10px;
+  padding: 50px;
+}
