@@ -41,6 +41,7 @@ iframe {
   width: 500px;
   padding-bottom: 10px;
 }
+
 @media (max-width: 700px) {
   .about {
     flex-wrap: wrap;

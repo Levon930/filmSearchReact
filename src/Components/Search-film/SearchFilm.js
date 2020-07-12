@@ -38,7 +38,7 @@ class ShowFilm extends React.Component {
   };
   getTrailer = async (urlVid) => {
     const response = await fetchService.get(urlVid);
-    console.log(response);
+
     this.setState({
       urlTrailer: response.results,
     });
@@ -51,6 +51,7 @@ class ShowFilm extends React.Component {
   }
   render() {
     const { item, loading, urlTrailer } = this.state;
+
     const trailer =
       urlTrailer.length !== 0 ? (
         urlTrailer.map((url) => {
@@ -83,7 +84,7 @@ class ShowFilm extends React.Component {
     }
     return (
       <div>
-        <div className=" about">
+        <div className="about">
           <img src={poster} alt={filName} />
           <div className="info">
             <p className="name">{filName}</p>
@@ -113,7 +114,7 @@ class ShowFilm extends React.Component {
             <p>
               <a
                 className="imdb"
-                href={`https://imdb.com/title/${item.imdb_i}`}
+                href={`https://imdb.com/title/${item.imdb_id}`}
                 target="_blank"
               >
                 Link to imdb{" "}

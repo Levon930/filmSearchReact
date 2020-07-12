@@ -25,7 +25,7 @@ class Search extends React.Component {
           onSubmit={(e) => e.preventDefault()}
           onKeyPress={(e) => {
             if (e.key === "Enter") {
-              history.push(`${value}`);
+              history.push(`/${value}`);
             }
           }}
         >
